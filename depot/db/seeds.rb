@@ -14,6 +14,6 @@ Product.create(:title => 'Programming Ruby 1.9',
         out there. If you need to get working programs delivered fast,
         you should add Ruby to your toolbox.
       </p>},
-  :image_url => 'https://www.baidu.com/img/bd_logo1.png',
+  :image_url => 'ruby.jpg',
   :price => 49.50)
 
