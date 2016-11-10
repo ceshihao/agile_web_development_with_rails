@@ -1,4 +1,4 @@
-<div class="cart_title">Your Cart</div>
+<!-- <div class="cart_title">Your Cart</div>
 
 <table>
   <% @cart.line_items.each do |item| %>
@@ -8,9 +8,10 @@
       <td class="item_price"><%= number_to_currency(item.total_price) %></td>
       <td><%= button_to 'Delete product', item, :method => :delete, :confirm => 'Are your sure?' %></td>
     </tr>
-  <% end %>
+  <% end %> -->
+  <%= render(@cart.line_items) %>
 
-  <tr class="total_line">
+<!--   <tr class="total_line">
     <td colspan="2">Total</td>
     <td class="total_cell"><%= number_to_currency(@cart.total_price) %></td>
   </tr>
@@ -20,4 +21,4 @@
 <%= button_to 'Empty cart', @cart, :method => :delete,
     :confirm => 'Are your sure?' %>
 <%= link_to 'Edit', edit_cart_path(@cart) %> |
-<%= link_to 'Back', store_index_url %>
+<%= link_to 'Back', store_index_url %> -->
